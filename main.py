@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash, ses
 from auth import signup_db, login_db
 from functools import wraps
 from models import User, Tool
-from tools.tool_operations import create_tool, tools_by_user, update_tool, delete_tool
+from tool_operations import create_tool, tools_by_user, update_tool, delete_tool
 from peewee import fn
 
 app = Flask(__name__)
